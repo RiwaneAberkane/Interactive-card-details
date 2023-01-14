@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive card details form</title>
+
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+        <div class="cardback">
+            <p class="cvc">ooo</p>
+        </div>
+        <div class="cardfront">
+            <img src="images/card-logo.svg" alt="">
+            <p class="numeroCard">0000 &nbsp; 0000 &nbsp; 0000 &nbsp; 0000</p>
+            <div class="bottomcardfront">
+              <p class="nameCard">Jeanne Applesead</p>
+              <p><span class="month">MM</span> / <span class="year">YY</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------------------- -->
+
+    <div class="right">
+      <form class="form" name="myForm" action="">
+        <div class="inputBox">
+            <span>CARD NUMBER</span>
+            <input placeholder="0000 0000 0000 0000" type="text" maxlength="19" class="card-number-input">
+            <span class="error" id="errornumber"></span>
+        </div>
+        <div class="inputBox">
+            <span>CARDHOLDER NAME</span>
+            <input placeholder="Jeanne Applesead" type="text" class="card-holder-input">
+            <span class="error" id="errorname"></span>
+        </div>
+        <div class="flexbox">
+            <div class="inputBox">
+                <span>EXP. DATE </span>
+                <select name="" id="" class="month-input">
+                    <option value="month" selected disabled>month</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <span class="error" id="errormonth"></span>
+            </div>
+            <div class="inputBox">
+                <span>(MM/YY)</span>
+                <select name="" id="" class="year-input">
+                    <option value="year" selected disabled>year</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <option value="2028">2028</option>
+                    <option value="2029">2029</option>
+                    <option value="2030">2030</option>
+                </select>
+                <span class="error" id="erroryear"></span>
+            </div>
+            
+            <div class="inputBox">
+                <span>CVC</span>
+                <input placeholder="e.g 123"  type="text" maxlength="3" class="cvv-input">
+                <span class="error" id="errorcvc"></span>
+            </div>
+        </div>
+        <button class="submit-btn">Confirm</button>
+        <!-- <input type="submit" value="Confirm" class="submit-btn"> -->
+      </form>
+      <div class="none">
+        <div class="success">
+          <img src="images/icon-complete.svg" alt="">
+          <h2>THANK YOU !</h2>
+          <p>We've added your card details</p>
+          <butto class="continue">Continue</button>
+        </div>
+       </div>
+    </div>
+ 
+  </div>
+
+<script src="main.js"></script>
+</body>
+</html>
+
