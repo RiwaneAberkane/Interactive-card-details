@@ -78,7 +78,7 @@
 }
 
 .container form{
-    width: 300px;
+    width: 350px;
 }
 
 .container form .inputBox{
@@ -146,19 +146,19 @@
 @media(min-width : 500px){
     .cardfront{
         padding: 37px;
-        left: 70px;
+        left: 50px;
         top: 122px;
         width: 400px ;
     }
 
     .cardback{
         top: 3px;
-        left: 100px;
+        left: 90px;
         width: 400px
     }
 
     .cvc{
-        left: 315px;
+        left: 312px;
     }
 
     .form{

@@ -39,7 +39,7 @@ inputCvv.oninput = () =>{
 
 submit.addEventListener('click', (e) =>{
     e.preventDefault();
-    if (inputNumber.value == "" || !ONLY_NUMBERS.test(inputNumber.value) || inputNumber.value.length < 16)                                  
+    if (inputNumber.value == "" || !ONLY_NUMBERS.test(inputNumber.value) || inputNumber.value.length < 19)                                  
 { 
     document.getElementById('errornumber').innerHTML="Wrong format, number's only";  
     inputNumber.focus(); 
@@ -71,7 +71,7 @@ if (inputYear.value == "year")
 }else if(document.getElementById('erroryear').innerHTML=""){
     return true;
 }        
-if (inputCvv.value == "" || inputCvv.value.length < 3)                                  
+if (inputCvv.value == "" || inputCvv.value.length < 3 || !ONLY_NUMBERS.test(inputCvv.value))                                  
 { 
     document.getElementById('errorcvc').innerHTML="Can't be blank";  
     inputCvv.focus(); 
